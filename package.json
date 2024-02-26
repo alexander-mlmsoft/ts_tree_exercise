@@ -1,0 +1,23 @@
+{
+  "name": "@mlm-soft/ts-tree-exercise",
+  "version": "0.0.0",
+  "description": "Exercise for candidates for employment",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production ts-node --files src/main.ts",
+    "dev": "cross-env NODE_ENV=development ts-node-dev --files src/main.ts",
+    "test": "jest --config ./test/jest.json",
+    "build": "rimraf ./lib && tsc --build tsconfig.json"
+  },
+  "main": "./lib/index.js",
+  "author": "apiletskiy ",
+  "license": "ISC",
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "4.8.4"
+  }
+}
